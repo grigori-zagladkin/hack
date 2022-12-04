@@ -1,0 +1,139 @@
+.container {
+    margin: 0 auto;
+    max-width: 390px;
+}
+
+.pad {
+    height: 10px;
+    background-color: #f5f5f5;
+}
+
+// Greetings
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url(./../../imgs/profile-bg.svg);
+}
+
+.greetings {
+    margin: 60px 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile__img {
+    margin-bottom: 20px;
+}
+
+// makePost
+
+.makePost {
+    padding: 20px 0;
+    background-color: #f5f5f5;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+
+        margin: 0 0 0 60px;
+
+        background-color: #fff;
+
+        width: 260px;
+        height: 20px;
+
+        padding: 15px 60px;
+
+        border-radius: 25px;
+        border: none;
+    }
+
+    &__img {
+        margin-left: -40px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+    span {
+        width: 230px;
+    }
+}
+
+// Post
+
+.post {
+    margin-bottom: 10px;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+        &_profile {
+            margin: 10px 0 10px 10px;
+
+            display: flex;
+            align-items: center;
+
+            &_text {
+                margin: -25px 0 0 15px;
+                font-size: 14px;
+                width: 90px;
+
+                span {
+                    display: block;
+                    margin-top: 5px;
+
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &_addition {
+            margin: 10px 20px 0 0;
+        }
+    }
+
+    &__body {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    &__footer {
+        margin: 20px 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &_icons {
+            margin-left: 10px;
+
+            display: flex;
+            align-items: center;
+
+            span {
+                display: inline-block;
+                margin: 0 20px 0 3px;
+            }
+        }
+
+        &_eye {
+            margin-right: 10px;
+
+            display: flex;
+            align-items: center;
+
+            span {
+                margin-left: 10px;
+
+                opacity: 50%;
+            }
+        }
+    }
+}
